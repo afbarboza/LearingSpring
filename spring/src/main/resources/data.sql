@@ -1,0 +1,1 @@
+INSERT INTO USER_PROFILE (id, name, password, roles) VALUES (0, 'admin', 'admin', 'admin');
