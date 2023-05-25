@@ -36,7 +36,7 @@ This is a simple project with a challenge for Backend developers.
 
 - [X] Create the database using [H2](https://www.h2database.com/html/main.html). You should include the user table, the user can have multiple roles.
 - [X] Create an endpoint to create a user. (The user should have a username and a password, be careful when saving the user password, and the roles)
-- [ ] Create an endpoint to update the permission to this user to ADMIN and/or USER role.
+- [X] Create an endpoint to update the permission to this user to ADMIN and/or USER role.
 
 * Book: REST API - Design Rulebook : Mark Masse: https://www.oreilly.com/library/view/rest-api-design/9781449317904/
 * Spring Data: https://www.baeldung.com/the-persistence-layer-with-spring-data-jpa
