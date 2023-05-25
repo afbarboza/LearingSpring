@@ -31,6 +31,19 @@ public class Controller {
         return new ResponseEntity<User>(newUser, HttpStatus.OK);
     }
 
+    @PutMapping("/user/{id}")
+    public ResponseEntity<User> updateUser(@RequestBody User user,
+                                           @PathVariable("id") Long userId) {
+        RestPreconditions.checkUserNotNull(user);
+        RestPreconditions.checkUserProperties(user);
+        User updatedUser = userService.updateUser(user, userId);
+        return new ResponseEntity<User>(updatedUser, HttpStatus.OK);
+    }
 
+    @DeleteMapping("/user/{id}")
+    public ResponseEntity<String> deleteUserById(@PathVariable("id") Long userId) {
+        userService.deleteUserById(userId);
+        return new ResponseEntity<>("OK", HttpStatus.OK);
+    }
 
 }
